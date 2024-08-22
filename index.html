@@ -14,8 +14,8 @@
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />-->
         <!-- tailwind css -->
         <script src="https://cdn.tailwindcss.com"></script>
-         <!-- custom tailwind css -->
-         <script>
+        <!-- custom tailwind css -->
+        <script>
             tailwind.config = {
                 theme: {
                     extend: {
@@ -23,9 +23,11 @@
                             'very-light-gray': '#F4F4F4', 
                             'btn': '#ABEF5F',
                             'btn-light': '#ABEF5F80',
+                            'light-dark': 'rgb(28, 28, 28)',
                         },
                         backgroundImage: {
                             'linear-hero': 'linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%)',
+                            'form-bg': "url('/images/bg.jpg')",
                         },
                         fontFamily: {
                             manrope: ['Manrope', 'sans-serif'],
@@ -343,7 +345,7 @@
                             <p class="text-medium font-medium text-gray-950 pb-8 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                         </div>
                     </div>
-                    <div class="grid grid-cols-3 gap-x-8">
+                    <div class="grid grid-cols-3 gap-x-8 pb-12">
                         <div class="bg-white p-6 rounded-3xl shadow-md">
                             <img src="images/article1.png" alt="" class="w-full">
                             <div class="ps-2">
@@ -402,7 +404,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white p-6 rounded-3xl shadow-md mt-4">
+                        <div class="bg-white p-6 rounded-3xl shadow-md">
                             <img src="images/article2.png" alt="" class="w-full">
                             <div class="ps-2">
                                 <div class="grid grid-cols-2 gap-x-2 pt-4">
@@ -522,29 +524,67 @@
                 </div>
             </section>
             <!-- contact form section -->
-            <section>
+            <section class="bg-form-bg bg-cover bg-no-repeat">
                 <div class="container mx-auto py-12">
-                    <p>Let’s Connect</p>
-                    <h1>Let’s Discuss Next Project</h1>
-                    <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-                    <div>
-                        <form action="" class="flex flex-col">
-                            <div class="grid grid-cols-2 gap-x-4">
-                                <input type="text" placeholder="First Name*">
-                                <input type="text" placeholder="Last Name*">
-                                <input type="text" placeholder="Phone Number*">
-                                <input type="email" placeholder="Email Address">
+                    <div class="flex flex-col items-center justify-center">
+                        <div class="flex items-center justify-center mt-6">
+                            <div class="bg-btn-light text-black font-semibold px-4 py-2 rounded-full shadow-md flex items-center space-x-2">
+                                <div class="inline-flex items-center justify-center text-black font-semibold rounded-full">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="size-6 text-black">
+                                        <path 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                    </svg>
+                                </div>
+                            <span>Let’s Connect</span>
                             </div>
-                            <textarea name="" id="" placeholder="Write your message here"></textarea>
-                            <button>Send Mail</button>
+                        </div>
+                        <div class="w-3/6">
+                            <h1 class="text-4xl font-black text-black leading-tight pb-4 pt-8 text-center">Let’s Discuss Next Project</h1>
+                            <p class="text-medium font-medium text-gray-950 pb-8 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                        </div>
+                    </div>
+                    <div class="w-9/12 mx-auto">
+                        <form action="" class="flex flex-col gap-y-6">
+                            <div class="grid grid-cols-2 gap-6">
+                                <input type="text" placeholder="First Name*" class="py-4 px-6 shadow-md rounded-3xl focus:outline-none focus:ring-2 focus:ring-btn">
+                                <input type="text" placeholder="Last Name*" class="py-4 px-6 shadow-md rounded-3xl focus:outline-none focus:ring-2 focus:ring-btn">
+                                <input type="text" placeholder="Phone Number*" class="py-4 px-6 shadow-md rounded-3xl focus:outline-none focus:ring-2 focus:ring-btn">
+                                <input type="email" placeholder="Email Address*" class="py-4 px-6 shadow-md rounded-3xl focus:outline-none focus:ring-2 focus:ring-btn">
+                            </div>
+                            <textarea name="" id="" placeholder="Write your message here" class="py-4 px-6 shadow-md rounded-3xl focus:outline-none focus:ring-2 focus:ring-btn h-72"></textarea>
+                            <button class="flex justify-center items-center gap-x-2 text-xl font-bold text-black bg-btn rounded-full py-3 px-6 font-extrabold shadow-md">
+                                View Details
+                                <div class="inline-block p-2 flex justify-center items-center bg-black rounded-full">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" 
+                                        viewBox="0 0 24 24" 
+                                        stroke-width="1.5" 
+                                        stroke="currentColor" 
+                                        class="h-4 text-white">
+                                        <path 
+                                        stroke-linecap="round" 
+                                        stroke-linejoin="round" 
+                                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                                    </svg>
+                                </div>
+                            </button>
                         </form>
                     </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <div class="container mx-auto py-12">
-                <a href="#" class="flex justify-center gap-x-2 text-3xl text-black font-extrabold">
+        <footer class="bg-light-dark">
+            <div class="container mx-auto py-12 flex flex-col justify-center items-center">
+                <a href="#" class="flex justify-center gap-x-2 text-4xl text-gray-100 font-extrabold pb-2">
                     <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
@@ -561,15 +601,15 @@
                     </div>
                     Rinterio
                 </a>
-                <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-                <ul class=" flex justify-center items-center gap-x-2 text-base ">
-                    <li class="hover:bg-btn rounded"><a class="font-bold text-gray-950">Home</a></li>
-                    <li class="hover:bg-btn rounded"><a class="font-medium">Services</a></li>
-                    <li class="hover:bg-btn rounded"><a class="font-medium">Portfolio</a></li>
-                    <li class="hover:bg-btn rounded"><a class="font-medium">Blogs</a></li>
-                    <li class="hover:bg-btn rounded"><a class="font-medium">Contact Us</a></li>
+                <p class="text-medium font-medium text-gray-400 py-4 text-center w-7/12 mx-auto">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <ul class="w-10/12 py-12 flex justify-between items-center text-base">
+                    <li class="hover:bg-btn hover:px-4 hover:py-2 px-4 py-2 rounded font-medium text-gray-200 hover:text-black"><a href="#" >Home</a></li>
+                    <li class="hover:bg-btn hover:px-4 hover:py-2 px-4 py-2 rounded font-medium text-gray-200 hover:text-black"><a href="#" >Services</a></li>
+                    <li class="hover:bg-btn hover:px-4 hover:py-2 px-4 py-2 rounded font-medium text-gray-200 hover:text-black"><a href="#" >Portfolio</a></li>
+                    <li class="hover:bg-btn hover:px-4 hover:py-2 px-4 py-2 rounded font-medium text-gray-200 hover:text-black"><a href="#" >Blogs</a></li>
+                    <li class="hover:bg-btn hover:px-4 hover:py-2 px-4 py-2 rounded font-medium text-gray-200 hover:text-black"><a href="#" >Contact Us</a></li>
                 </ul>
-                <a href="#" class="flex justify-center items-center gap-x-2 text-xl text-black bg-btn rounded-full py-2 px-4 font-extrabold">
+                <a href="#" class="flex justify-center items-center gap-x-2 text-xl text-black bg-btn rounded-full py-3 px-4 font-extrabold ">
                     Book Consult
                     <div class="inline-block p-2 flex justify-center items-center bg-black rounded-full">
                         <svg 
