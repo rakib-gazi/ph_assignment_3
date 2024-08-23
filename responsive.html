@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ph assignment 3</title>
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+        <!-- font awesome css -->
+         <link rel="stylesheet" href="css/all.min.css">
+        <!-- Daisy Ui css 
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />-->
+        <!-- tailwind css -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <!-- custom tailwind css -->
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'very-light-gray': '#F4F4F4', 
+                            'btn': '#ABEF5F',
+                            'btn-light': '#ABEF5F80',
+                            'light-dark': 'rgb(28, 28, 28)',
+                        },
+                        backgroundImage: {
+                            'linear-hero': 'linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%)',
+                            'form-bg': "url('/images/bg.jpg')",
+                        },
+                        fontFamily: {
+                            manrope: ['Manrope', 'sans-serif'],
+                        },
+                    }
+                }
+            }
+        </script>
+        <style>
+            /* * {
+                outline: 1px solid red;
+            } */
+        </style>
+    </head>
+    <body class="bg-very-light-gray font-manrope">
+        <main>
+            <!-- banner section -->
+<!-- Responsive Container with Grid -->
+<section class="bg-linear-hero">
+    <div class="container mx-auto px-4 md:px-8 lg:px-16 pt-12 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="flex justify-center items-center">
+                <img src="images/banner.png" alt="" class="w-full md:h-3/4">
+            </div>
+            <div class="col-span-full flex flex-col justify-center items-center gap-y-8 mt-8">
+                <h1 class="text-black text-3xl md:text-5xl lg:text-7xl font-black text-center leading-snug">
+                    A barn house of this design has a striking appearance
+                </h1>
+                <p class="text-gray-800 text-sm md:text-medium font-medium text-center w-full md:w-10/12">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <a href="#" class="flex justify-center items-center gap-x-2 text-lg md:text-xl font-bold text-black bg-btn-light rounded-full py-2 px-4 md:px-6 font-extrabold border-2 border-btn shadow-md">
+                    View Details
+                    <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="h-4 text-black">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </body>
+</html>
