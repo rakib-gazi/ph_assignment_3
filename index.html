@@ -8,8 +8,6 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-        <!-- font awesome css -->
-         <link rel="stylesheet" href="css/all.min.css">
         <!-- Daisy Ui css -->
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
         <!-- tailwind css -->
@@ -41,122 +39,10 @@
                 }
             }
         </script>
-        <style>
-            /* * {
-                outline: 1px solid red;
-            } */
-        </style>
     </head>
     <body class="bg-very-light-gray font-manrope">
+        <!-- navbar -->
         <header class="bg-transparent">
-            <!-- <nav class="container py-6">
-                <div class="navbar ">
-                    <div class="navbar-start">
-                        <a href="#" class="flex justify-center gap-x-2 text-3xl text-black font-extrabold">
-                            <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke-width="1.5" 
-                                    stroke="currentColor" 
-                                    class="h-5 text-black">
-                                    <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                </svg>
-                            </div>
-                            Rinterio
-                        </a>
-                    </div>
-                    <div class=" lg:navbar-center lg:block hidden">
-                        <ul class=" flex justify-center items-center 2xl:gap-x-8 xl:gap-x-4 text-base ">
-                            <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-950 cursor-pointer"><a href="#" class=" ">Home</a></li>
-                            <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Services</a></li>
-                            <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Portfolio</a></li>
-                            <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Blogs</a></li>
-                            <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Contact Us</a></li>
-                        </ul>
-                    </div>
-                    <div class="navbar-end flex 2xl:gap-x-8 xl:gap-x-4 lg:gap-x-3 md:block hidden">
-                        <a href="#" class="flex justify-center items-center gap-x-2 text-xl text-black ">
-                            <div class="inline-block p-2 flex justify-center items-center bg-white rounded-full">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke-width="1.5" 
-                                    stroke="currentColor" 
-                                    class="h-6 text-gray-600">
-                                    <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#" class="flex justify-center items-center gap-x-2 text-xl text-black ">
-                            <div class="inline-block p-2 flex justify-center items-center bg-white rounded-full">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke-width="1.5" 
-                                    stroke="currentColor" 
-                                    class="h-6 text-gray-600">
-                                    <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                                </svg>
-                            </div>
-                        </a>
-                        <a href="#" class="flex justify-center items-center gap-x-2 xl:text-xl text:medium text-black bg-btn rounded-full py-2 px-4 font-extrabold">
-                            Book Consult
-                            <div class="inline-block p-2 flex justify-center items-center bg-black rounded-full">
-                                <svg 
-                                    xmlns="http://www.w3.org/2000/svg" 
-                                    fill="none" 
-                                    viewBox="0 0 24 24" 
-                                    stroke-width="1.5" 
-                                    stroke="currentColor" 
-                                    class="h-4 text-white">
-                                    <path 
-                                    stroke-linecap="round" 
-                                    stroke-linejoin="round" 
-                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                </svg>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="navbar-end lg:hidden block">
-                        <div class="dropdown dropdown-left">
-                          <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              class="h-5 w-5"
-                              fill="none"
-                              viewBox="0 0 24 24"
-                              stroke="currentColor">
-                              <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                            </svg>
-                          </div>
-                          <ul
-                            tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                            <li><a>Homepage</a></li>
-                            <li><a>Portfolio</a></li>
-                            <li><a>About</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                  </div>
-            </nav> -->
             <nav class="container py-6">
                 <div class="navbar ">
                   <div class="navbar-start">
@@ -187,7 +73,6 @@
                       <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Contact Us</a></li>
                     </ul>
                   </div>
-                 
                   <div class="navbar-end flex  md:order-3 lg:order-last 2xl:gap-x-8 xl:gap-x-4 lg:gap-x-3 ">
                     <div class="md:block hidden">
                         <div class="flex justify-center items-center xl:gap-x-4 gap-x-3 ">
@@ -244,17 +129,17 @@
                     </div>
                     <div class="dropdown dropdown-left lg:hidden block ">
                       <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" 
+                            viewBox="0 0 24 24" 
+                            stroke-width="1.5" 
+                            stroke="currentColor" 
+                            class="h-6 w-6">
+                            <path 
                             stroke-linecap="round" 
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h7" />
+                            stroke-linejoin="round" 
+                            d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
                         </svg>
                       </div>
                       <ul
@@ -268,115 +153,6 @@
                   </div>
                 </div>
             </nav> 
-            <!-- <nav class="container py-6">
-                <div class="navbar">
-                  <div class="navbar-start">
-                    <a href="#" class="flex justify-center gap-x-2 text-3xl text-black font-extrabold">
-                      <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg" 
-                          fill="none" 
-                          viewBox="0 0 24 24" 
-                          stroke-width="1.5" 
-                          stroke="currentColor" 
-                          class="h-5 text-black">
-                          <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg>
-                      </div>
-                      Rinterio
-                    </a>
-                  </div>
-                  <div class="lg:navbar-center lg:block hidden">
-                    <ul class=" flex justify-center items-center 2xl:gap-x-8 xl:gap-x-4 text-base ">
-                      <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-950 cursor-pointer"><a href="#" class=" ">Home</a></li>
-                      <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Services</a></li>
-                      <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Portfolio</a></li>
-                      <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Blogs</a></li>
-                      <li class="hover:bg-btn rounded xl:px-4 px-3 py-2 xl:hover:px-4 hover:px-3 hover:py-2 font-bold text-gray-500 hover:text-gray-950 cursor-pointer"><a href="#" class=" ">Contact Us</a></li>
-                    </ul>
-                  </div>
-                  
-                  <div class="md:block flex justify-center items-center gap-x-2 xl:text-xl text:medium text-black bg-btn rounded-full py-2 px-4 font-extrabold">
-                    <a href="#">
-                      <div class="inline-block p-2 flex justify-center items-center bg-white rounded-full">
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg" 
-                          fill="none" 
-                          viewBox="0 0 24 24" 
-                          stroke-width="1.5" 
-                          stroke="currentColor" 
-                          class="h-6 text-gray-600">
-                          <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#">
-                      <div class="inline-block p-2 flex justify-center items-center bg-white rounded-full">
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg" 
-                          fill="none" 
-                          viewBox="0 0 24 24" 
-                          stroke-width="1.5" 
-                          stroke="currentColor" 
-                          class="h-6 text-gray-600">
-                          <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                        </svg>
-                      </div>
-                    </a>
-                    <a href="#" class="flex justify-center items-center gap-x-2 xl:text-xl text:medium text-black bg-btn rounded-full py-2 px-4 font-extrabold">
-                      Book Consult
-                      <div class="inline-block p-2 flex justify-center items-center bg-black rounded-full">
-                        <svg 
-                          xmlns="http://www.w3.org/2000/svg" 
-                          fill="none" 
-                          viewBox="0 0 24 24" 
-                          stroke-width="1.5" 
-                          stroke="currentColor" 
-                          class="h-4 text-white">
-                          <path 
-                            stroke-linecap="round" 
-                            stroke-linejoin="round" 
-                            d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                        </svg>
-                      </div>
-                    </a>
-                  </div>
-                  <div class="navbar-end flex md:order-3 lg:order-last 2xl:gap-x-8 xl:gap-x-4 lg:gap-x-3 lg:hidden block">
-                    <div class="dropdown dropdown-left md:hidden ">
-                      <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          class="h-5 w-5"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke="currentColor">
-                          <path
-                            stroke-linecap="round" 
-                            stroke-linejoin="round"
-                            stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
-                      </div>
-                      <ul
-                        tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-12 w-52 p-2 shadow  -me-16">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </nav> -->
         </header> 
         <main>
             <!-- banner section -->
@@ -411,9 +187,7 @@
             </section>
             <!-- services section -->
              <section>
-                
                 <div class="xl:container lg:container md:container sm:container  container mx-auto  px-4 pt-12">
-                    
                     <div class="grid lg:grid-cols-2  grid-cols-1 pb-24 ">
                         <div>
                             <img src="images/Vector.png" alt="" class="xl:-ms-16 -ms-8 lg:block hidden">
@@ -610,65 +384,11 @@
                     </div>
                     <div class="pb-8">
                         <div class="grid lg:grid-cols-12 md:grid-cols-2 grid-cols-1 gap-8 py-8 px-4">
-                            <!-- <div class="lg:col-span-3 md:col-span-2 col-span-1 border border-gray-200 rounded-3xl shadow-md overflow-hidden g  gap-x-8 p-6">
-                                <img src="images/img1.png" alt="Image 1" class="w-1/3 object-cover shadow-md rounded-3xl">
-                                <div class="flex flex-col justify-center">
-                                    <h2 class="text-2xl font-black text-gray-700 ps-4">Commercial</h2>
-                                    <p class="text-medium font-bold text-gray-500 py-6 w-10/12 ps-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
-                                    <div class="flex">
-                                        <a href="#" class="flex items-center hover:bg-btn-light text-xl font-black text-gray-700  px-4 py-2 hover:px-4 hover:py-2 hover:rounded-full gap-x-2 hover:transition hover:duration-800 hover:ease-in-out">
-                                            View Details
-                                            <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
-                                                <svg 
-                                                    xmlns="http://www.w3.org/2000/svg" 
-                                                    fill="none" 
-                                                    viewBox="0 0 24 24" 
-                                                    stroke-width="1.5" 
-                                                    stroke="currentColor" 
-                                                    class="h-4 text-black">
-                                                    <path 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="lg:col-span-3 md:col-span-2 col-span-1 border border-gray-200 rounded-3xl shadow-md overflow-hidden grid lg:gap-0 gap-8 p-6 lg:grid-cols-3 sm:grid-cols-1">
-                                <img src="images/img1.png" alt="Image 1" class="w-full shadow-md rounded-3xl sm:mx-auto lg:col-span-1">
-                                <div class="lg:col-span-2">
-                                    <h2 class="md:text-2xl text-xl font-black text-gray-700 lg:ps-4 sm:ps-0">Commercial</h2>
-                                    <p class="md:text-medium text-sm font-bold text-gray-500 md:py-6 py-2 md:w-10/12 w-full lg:ps-4 sm:ps-0 sm:w-full">
-                                        The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .
-                                    </p>
-                                    <div class="flex">
-                                        <a href="#" class="flex items-center hover:bg-btn-light md:text-xl text-base font-black text-gray-700 px-4 py-2 hover:rounded-full gap-x-2 hover:transition hover:duration-800 hover:ease-in-out">
-                                            View Details
-                                            <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
-                                                <svg 
-                                                    xmlns="http://www.w3.org/2000/svg" 
-                                                    fill="none" 
-                                                    viewBox="0 0 24 24" 
-                                                    stroke-width="1.5" 
-                                                    stroke="currentColor" 
-                                                    class="h-4 text-black">
-                                                    <path 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="lg:col-span-8 md:col-span-2 col-span-1 border border-gray-200 rounded-3xl shadow-md overflow-hidden grid gap-4 p-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 ">
                                 <img src="images/img1.png" alt="Image 1" class="h-52 shadow-md rounded-3xl sm:mx-auto lg:col-span-1 object-cover  w-full">
                                 <div class="lg:col-span-2">
                                     <h2 class="md:text-2xl text-xl font-black text-gray-700 lg:ps-4 sm:ps-0">Commercial Projects</h2>
-                                    <p class="md:text-medium text-sm font-bold text-gray-500 lg:py-6  py-2  w-full lg:ps-4 sm:ps-0 sm:w-full">
+                                    <p class="md:text-medium text-sm font-bold text-gray-500 xl:py-6  py-2  w-full lg:ps-4 sm:ps-0 sm:w-full">
                                         Our commercial projects offer a glimpse into our ability to create functional and aesthetically pleasing spaces for businesses. From retail stores to office buildings, we specialize in designing structures that are both inviting and efficient.
                                     </p>
                                     <div class="flex">
@@ -692,45 +412,18 @@
                                     </div>
                                 </div>
                             </div>
-                            
                             <div class="lg:col-span-4 border border-gray-200 rounded-3xl shadow-md overflow-hidden bg-transparent p-6 ">
                                 <img src="images/img2.png" alt="Image 2" class="h-52 rounded-3xl w-full object-cover ">
                             </div>
                             <div class=" lg:col-span-3 border border-gray-200 rounded-3xl shadow-md overflow-hidden bg-transparent p-6">
                                 <img src="images/img3.png" alt="Image 2" class="w-full h-52 rounded-3xl object-cover">
                             </div>
-                            <!-- <div class="lg:col-span-3 md:col-span-2 border border-gray-200 rounded-3xl shadow-md overflow-hidden flex gap-x-8 p-6">
-                                <img src="images/img4.png" alt="Image 1" class="w-1/3 object-cover rounded-3xl">
-                                <div class="flex flex-col justify-center">
-                                    <h2 class="text-2xl font-black text-gray-700 ps-4">Commercial</h2>
-                                    <p class="text-medium font-bold text-gray-500 py-6 w-10/12 ps-4">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
-                                    <div class="flex">
-                                        <a href="#" class="flex items-center hover:bg-btn-light text-xl font-black text-gray-700  px-4 py-2 hover:px-4 hover:py-2 hover:rounded-full gap-x-2 hover:transition hover:duration-800 hover:ease-in-out">
-                                            View Details
-                                            <div class="inline-block p-2 flex justify-center items-center bg-btn rounded-full">
-                                                <svg 
-                                                    xmlns="http://www.w3.org/2000/svg" 
-                                                    fill="none" 
-                                                    viewBox="0 0 24 24" 
-                                                    stroke-width="1.5" 
-                                                    stroke="currentColor" 
-                                                    class="h-4 text-black">
-                                                    <path 
-                                                    stroke-linecap="round" 
-                                                    stroke-linejoin="round" 
-                                                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <div class="lg:col-span-6 md:col-span-2 col-span-1 border border-gray-200 rounded-3xl shadow-md overflow-hidden grid gap-4 p-6 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
-                                <img src="images/img1.png" alt="Image 1" class="h-52 shadow-md rounded-3xl sm:mx-auto lg:col-span-1 object-cover  w-full">
-                                <div class="lg:col-span-2 flex flex-col justify-between">
+                            <div class="lg:col-span-6 md:col-span-2 col-span-1 border border-gray-200 rounded-3xl shadow-md overflow-hidden grid gap-4 p-6 md:grid-cols-2 sm:grid-cols-1">
+                                <img src="images/img1.png" alt="Image 1" class="h-52 shadow-md rounded-3xl sm:mx-auto  object-cover  w-full">
+                                <div class=" flex flex-col justify-between">
                                     <h2 class="md:text-2xl text-xl font-black text-gray-700 lg:ps-4 sm:ps-0">Commercial Projects</h2>
-                                    <p class="md:text-medium text-sm font-bold text-gray-500 md:pt-6 py-2  w-full lg:ps-4 sm:ps-0 sm:w-full">
-                                        Our commercial projects offer a glimpse into our ability to create functional and aesthetically pleasing spaces for businesses. From retail stores to office buildings.
+                                    <p class="md:text-medium text-sm font-bold text-gray-500 xl:pt-6 pt-2 xl:py-2 lg:py-0 py-2  w-full lg:ps-4 sm:ps-0 sm:w-full">
+                                        Our commercial projects offer a glimpse into our ability to create functional and aesthetically pleasing spaces for businesses.
                                     </p>
                                     <div class="flex">
                                         <a href="#" class="flex items-center hover:bg-btn-light md:text-xl text-base font-black text-gray-700 md:px-4 py-2 hover:rounded-full gap-x-2 hover:transition hover:duration-800 hover:ease-in-out">
@@ -763,79 +456,69 @@
             <!-- challenge 2 -->
             <section>
                 <div class="container mx-auto p-6">
-                    <!-- Our Skills Section -->
                     <div class="grid  lg:grid-cols-2  grid-cols-1 gap-8">
-                      <!-- Left Content -->
-                      <div>
-                        <div class="flex items-center lg:justify-start justify-center mt-6 pb-6">
-                            <div class="bg-btn-light text-black font-semibold px-4 py-2 rounded-full shadow-md flex items-center space-x-2">
-                                <div class="inline-flex items-center justify-center text-black font-semibold rounded-full">
-                                    <svg 
-                                        xmlns="http://www.w3.org/2000/svg" 
-                                        fill="none" 
-                                        viewBox="0 0 24 24" 
-                                        stroke-width="1.5" 
-                                        stroke="currentColor" 
-                                        class="size-6 text-black">
-                                        <path 
-                                        stroke-linecap="round" 
-                                        stroke-linejoin="round" 
-                                        d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
-                                    </svg>
+                        <div>
+                                <div class="flex items-center lg:justify-start justify-center mt-6 pb-6">
+                                    <div class="bg-btn-light text-black font-semibold px-4 py-2 rounded-full shadow-md flex items-center space-x-2">
+                                        <div class="inline-flex items-center justify-center text-black font-semibold rounded-full">
+                                            <svg 
+                                                xmlns="http://www.w3.org/2000/svg" 
+                                                fill="none" 
+                                                viewBox="0 0 24 24" 
+                                                stroke-width="1.5" 
+                                                stroke="currentColor" 
+                                                class="size-6 text-black">
+                                                <path 
+                                                stroke-linecap="round" 
+                                                stroke-linejoin="round" 
+                                                d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                            </svg>
+                                        </div>
+                                        <span>Our Skills</span>
+                                    </div>
                                 </div>
-                            <span>Our Skills</span>
-                            </div>
+                                <h1 class="md:text-4xl text-2xl font-black xl:w-2/3  w-full text-black leading-tight lg:text-left text-center">Empower Our Team with Industry-Leading Skills and Expertise</h1>
+                                <p class="md:text-xl text-sm font-medium text-gray-800 lg:w-11/12 w-full  md:py-8 py-4 lg:text-left text-center">We excel in construction, architecture, painting, and plumbing, turning your leadership into a competitive advantage through expertise.</p>
+                                <div class="mb-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-800 font-semibold">CONSTRUCTION</span>
+                                    <span class="text-gray-800 font-semibold ">95%</span>
+                                </div>
+                                <div class="bg-gray-200 h-2 rounded">
+                                    <div class="bg-btn h-4 rounded w-[95%]" ></div>
+                                </div>
+                                </div>
+                                <div class="mb-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-800 font-semibold">ARCHITECTURE</span>
+                                    <span class="text-gray-800 font-semibold ">80%</span>
+                                </div>
+                                <div class="bg-gray-200 h-2 rounded">
+                                    <div class="bg-cyan-500 h-4 rounded w-[80%]" ></div>
+                                </div>
+                                </div>
+                                <div class="mb-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-800 font-semibold">PAINTING</span>
+                                    <span class="text-gray-800 font-semibold">60%</span>
+                                </div>
+                                <div class="bg-gray-200 h-2 rounded">
+                                    <div class="bg-orange-500 h-4 rounded w-[60%]" ></div>
+                                </div>
+                                </div>
+                                <div class="mb-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-gray-800 font-semibold">PLUMBING</span>
+                                    <span class="text-gray-800 font-semibold">75%</span>
+                                </div>
+                                <div class="bg-gray-200 h-2 rounded">
+                                    <div class="bg-blue-700 h-4 rounded w-[75%]" ></div>
+                                </div>
+                                </div>
                         </div>
-                        <h1 class="md:text-4xl text-2xl font-black xl:w-2/3  w-full text-black leading-tight lg:text-left text-center">Empower Our Team with Industry-Leading Skills and Expertise</h1>
-                        <p class="md:text-xl text-sm font-medium text-gray-800 lg:w-11/12 w-full  md:py-8 py-4 lg:text-left text-center">We excel in construction, architecture, painting, and plumbing, turning your leadership into a competitive advantage through expertise.</p>
-                         
-                        <!-- Skills Progress Bars -->
-                        <div class="mb-4">
-                          <div class="flex justify-between items-center mb-2">
-                            <span class="text-gray-800 font-semibold">CONSTRUCTION</span>
-                            <span class="text-gray-800 font-semibold ">95%</span>
-                          </div>
-                          <div class="bg-gray-200 h-2 rounded">
-                            <div class="bg-btn h-4 rounded w-[95%]" ></div>
-                          </div>
-                        </div>
-                  
-                        <div class="mb-4">
-                          <div class="flex justify-between items-center mb-2">
-                            <span class="text-gray-800 font-semibold">ARCHITECTURE</span>
-                            <span class="text-gray-800 font-semibold ">80%</span>
-                          </div>
-                          <div class="bg-gray-200 h-2 rounded">
-                            <div class="bg-cyan-500 h-4 rounded w-[80%]" ></div>
-                          </div>
-                        </div>
-                  
-                        <div class="mb-4">
-                          <div class="flex justify-between items-center mb-2">
-                            <span class="text-gray-800 font-semibold">PAINTING</span>
-                            <span class="text-gray-800 font-semibold">60%</span>
-                          </div>
-                          <div class="bg-gray-200 h-2 rounded">
-                            <div class="bg-orange-500 h-4 rounded w-[60%]" ></div>
-                          </div>
-                        </div>
-                  
-                        <div class="mb-4">
-                          <div class="flex justify-between items-center mb-2">
-                            <span class="text-gray-800 font-semibold">PLUMBING</span>
-                            <span class="text-gray-800 font-semibold">75%</span>
-                          </div>
-                          <div class="bg-gray-200 h-2 rounded">
-                            <div class="bg-blue-700 h-4 rounded w-[75%]" ></div>
-                          </div>
-                        </div>
-                      </div>
-                  
-                      <!-- Right Content -->
-                      <div>
+                        <div>
                             <h1 class="md:text-3xl text-2xl font-black text-black leading-tight pb-4 md:pt-8 pt-2">Plan for a Secure and Fulfilling Retirement?</h1>
                             <p class="md:text-xl text-sm font-medium text-gray-800 md:pb-8 pb-8">Navigating the complexities of retirement planning can be daunting. We offer expert guidance to ensure you’re well-prepared for a comfortable and secure future.</p>
-                        <!-- FAQ Section -->
                             <div class="collapse collapse-plus bg-base-200 bg-white mb-4 shadow-md">
                                 <input type="radio" name="my-accordion-3" checked="checked" />
                                 <div class="collapse-title text-xl font-medium bg-white text-gray-700">What is the typical timeline for building a custom home?</div>
@@ -857,9 +540,9 @@
                                     <p class="font-bold text-gray-500">We recommend using high-performance insulation, energy-efficient windows, and sustainable materials like bamboo or recycled wood. Incorporating solar panels and smart home technology can further enhance energy efficiency.</p>
                                 </div>
                             </div>
-                      </div>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </section>
             <!-- news part -->
             <section>
